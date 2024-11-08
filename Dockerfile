@@ -5,7 +5,7 @@ ARG \
     BUILD_ARCH \
     YQ_VERSION \
     COSIGN_VERSION
-
+#据指定的架构（BUILD_ARCH）下载并安装相应版本的 yq 和 cosign 工具，并配置一些环境
 RUN \
     set -x \
     && apk add --no-cache \
